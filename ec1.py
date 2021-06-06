@@ -15,13 +15,16 @@ def reverse(list):
         idx = idx - 1
     return list
 
-#gets a sentence from the user
-inp = str(input("Enter a sentence: "))
-#turn it into a list of seperate strings
-list = inp.split(" ")
-newList = reverse(list)
-test = " "
-#make the list into a sentence
-reversedS = test.join(newList)
-#print results
-print(reversedS)
+
+def main(inp):
+    #gets a sentence from the user
+    # inp = str(input("Enter a sentence: "))
+    #turn it into a list of seperate strings
+    list = inp.split(" ")
+    newList = reverse(list)
+    test = " "
+    #make the list into a sentence
+    reversedS = test.join(newList)
+    #print results
+    print(reversedS)
+    return reversedS
